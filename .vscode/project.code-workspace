@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "name": "ROOT",
+      "path": "../",
+    },
+    {
+      "name": "SOURCE LIB",
+      "path": "../lib",
+    },
+    {
+      "name": "ASSETS",
+      "path": "../assets",
+    }
+  ],
+  "settings": {}
+}
