@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:scribe/screens/on_boarding.dart';
+import 'package:scribe/raw_data/themes/dark_theme.dart';
+import 'package:scribe/screens/on_boardings/on_boarding.dart';
+// import 'package:flutter_dotenv/flutter_dotenv.dart';
+// import 'package:path/path.dart' as path;
 
-void main() {
+Future main() async {
+  // await dotenv.load(fileName: path.join("..", ".env"));
   runApp(const MainApp());
 }
 
@@ -12,19 +16,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Scribe",
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.black,
-          titleTextStyle: TextStyle(color: Colors.white),
-        ),
-        scaffoldBackgroundColor: Colors.black,
-        textTheme: const TextTheme(
-          bodyLarge: TextStyle(fontSize: 24, color: Colors.white),
-          bodyMedium: TextStyle(fontSize: 18, color: Colors.white),
-          bodySmall: TextStyle(fontSize: 14, color: Colors.white),
-        ),
-      ),
+      theme: DarkTheme.theme,
       home: const OnBoarding(),
     );
   }
